@@ -50,11 +50,6 @@ void rainha_diag_cima_direita_rec(int d) {
 /* ==============================================
    4) CAVALO (loops aninhados + continue/break)
    ==============================================
-   - Simula movimentos em “L” para CIMA e DIREITA.
-   - Usa variáveis de posição (linha/coluna) em um tabuleiro 8x8 (1..8).
-   - Para cada movimento: 2 passos “Cima” e 1 passo “Direita”.
-   - Usa 'break' quando não dá para subir (borda superior) e 'continue'
-     para pular a parte da “Direita” se já estiver na coluna 8.
 */
 void cavalo_loops_complexos(int movimentos, int linha_inicial, int coluna_inicial) {
     int linha = linha_inicial;
@@ -91,9 +86,6 @@ void cavalo_loops_complexos(int movimentos, int linha_inicial, int coluna_inicia
 /* ======================================================
    5) BISPO COM LOOPS ANINHADOS (além da versão recursiva)
    ======================================================
-   - Loop externo: movimento vertical (Cima) uma vez por passo.
-   - Loop interno: movimento horizontal (Direita) uma vez por passo.
-   - No total, cada passo do bispo faz: Cima + Direita.
 */
 void bispo_loops_aninhados(int passos) {
     for (int v = 1; v <= passos; v++) {
